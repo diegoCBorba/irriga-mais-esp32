@@ -16,6 +16,9 @@ Este repositório contém o código para o hardware do sistema de irrigação au
 - **Módulo Relé + Bomba d'água**
 - **Bibliotecas Arduino**
 
+---
+![Image](https://github.com/user-attachments/assets/7a3cd997-1b63-448f-b355-77a82241f723)
+
 ## Conexões
 
 | Componente       | Pino no ESP32 |
