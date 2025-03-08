@@ -106,7 +106,7 @@ Aqui está a seção que você pode adicionar ao `README.md` para linkar o repos
 
 O aplicativo mobile que se comunica com este hardware está disponível em um repositório separado. Ele foi desenvolvido para monitorar e controlar o sistema de irrigação automática em tempo real, permitindo que os usuários visualizem a umidade do solo, ajustem os limites de irrigação e selecionem diferentes plantas.
 
-### Repositório do Aplicativo Web
+### Repositório do Aplicativo Mobile
 
 Você pode acessar o código-fonte do aplicativo web no seguinte repositório:
 
