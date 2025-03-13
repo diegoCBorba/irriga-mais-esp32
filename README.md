@@ -98,9 +98,41 @@ Este repositório contém o código para o hardware do sistema de irrigação au
 
 O monitor serial exibe informações sobre o status da conexão Wi-Fi, eventos do WebSocket e dados enviados/recebidos. Use-o para depuração e verificação do funcionamento do sistema.
 
-
 Aqui está a seção que você pode adicionar ao `README.md` para linkar o repositório do aplicativo web:
 
+## Melhorias possíveis
+
+- Adicionar Controle de Irrigação por Horário:
+   - Além de controlar a irrigação com base na umidade do solo, você pode permitir que o usuário defina horários específicos para ativar a irrigação, independentemente da umidade. Isso pode ser útil em situações em que a irrigação é necessária em horários programados.     
+- Notificações para o Usuário:
+   - Integrar notificações no aplicativo móvel ou até mesmo alertas por e-mail/SMS quando a umidade estiver fora do intervalo ideal ou quando o sistema de irrigação estiver ativado/desativado.
+- Aprimorar o Algoritmo de Leitura de Umidade:
+   - Implementar uma média móvel ou um filtro de suavização nos dados de umidade do solo para evitar flutuações rápidas nas leituras e proporcionar um controle mais estável.
+- Salvar relatórios via CSV:
+   - Adição de um espaço que possibilite baixar um arquivo csv com as informações do relatório.
+   - Melhorar a visualização do gráfico.
+   - Adicionar novas formas de visualização dos dados do relatório.
+
+## Ideias para expansão
+
+- Adicionar Suporte para Múltiplos Sensores de Umidade:
+   - Monitorar mais de uma planta ou área de irrigação, seria interessante adicionar suporte para múltiplos sensores de umidade. O ESP32 poderia gerenciar vários sensores e o aplicativo móvel permitiria a seleção de diferentes áreas de irrigação.
+- Suporte a Conectividade de Nuvem:
+  - Você poderia integrar o sistema com plataformas de nuvem como AWS IoT ou Google Cloud para armazenar dados históricos de umidade e irrigação. Isso permitiria monitorar e ajustar a irrigação remotamente, mesmo fora de sua rede local.
+- Inteligência Artificial ou Algoritmos de Aprendizado de Máquina:
+   - Em um estágio mais avançado, implementar algoritmos de aprendizado de máquina para prever quando as plantas precisam de irrigação com base em variáveis como clima (temperatura, umidade do ar) e o tipo de planta.
+- Adicionar Suporte para Múltiplos Tipos de Sensores:
+  - Sensor de Temperatura e Umidade do Ar (DHT11/DHT22):
+      - A umidade e a temperatura do ar podem influenciar diretamente a evaporação da água do solo. Incorporar um sensor de temperatura e umidade do ar (como o DHT11 ou DHT22) ajudaria a entender melhor as condições climáticas que afetam a irrigação, ajustando os parâmetros de irrigação com base na previsão do tempo local.
+   - Sensor de Luz (LDR - Light Dependent Resistor):
+      - A intensidade da luz pode impactar a evaporação e a fotossíntese das plantas. Um sensor LDR poderia ser utilizado para medir a intensidade da luz no ambiente e ajustar o sistema de irrigação com base na quantidade de luz que as plantas estão recebendo, ajudando a otimizar o consumo de água.
+   - Sensor de Temperatura do Solo (NTC ou termistor):
+      - Sensores de temperatura do solo podem ser utilizados para monitorar as condições térmicas do solo. A temperatura do solo pode influenciar a taxa de absorção de água pelas raízes das plantas, e essa informação pode ser usada para melhorar o momento da irrigação, já que o solo quente pode precisar de mais irrigação.
+   - Sensor de pH do Solo:
+      - O pH do solo também afeta a absorção de nutrientes pelas plantas. Embora não seja um indicador direto da necessidade de irrigação, saber o pH do solo pode ajudar a otimizar as condições gerais para o crescimento das plantas, ajustando o regime de irrigação com base em um pH mais ideal.
+   - Sensor de Condutividade Elétrica (EC):
+     - Esse sensor mede a salinidade do solo. Em solos salinos, a capacidade de retenção de água é afetada, e as plantas podem não absorver água corretamente. O sensor EC pode ser útil para ajustar a irrigação com base na salinidade do solo.
+- Adicionar suporte a múltiplos dispositivos de irrigação.
 
 ## Aplicativo Mobile
 
