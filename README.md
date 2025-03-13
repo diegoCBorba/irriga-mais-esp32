@@ -17,7 +17,13 @@ Este repositório contém o código para o hardware do sistema de irrigação au
 - **Bibliotecas Arduino**
 
 ---
+## Diagrama de Blocos
+
 ![Image](https://github.com/user-attachments/assets/7a3cd997-1b63-448f-b355-77a82241f723)
+
+## Esquemático
+
+![image](https://github.com/user-attachments/assets/6a1cd101-e303-4c31-abc9-0553ca2d8d48)
 
 ## Conexões
 
